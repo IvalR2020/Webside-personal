@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #F9FCFB;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #5E9C92, #A8D5C9);
+      color: #fff;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      padding: 10px 20px;
+      border: 2px solid #E6F5F1;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #E6F5F1;
+      color: #5E9C92;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(94,156,146,0.4);
+    }
+
+    /* SECTION */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #5E9C92;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #A8D5C9;
+      margin: 10px auto 0;
+    }
+
+    /* ABOUT */
+    #about p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* PORTFOLIO */
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .portfolio-item {
+      background: #E6F5F1;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .portfolio-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(94,156,146,0.3);
+    }
+    .portfolio-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .portfolio-item h3 {
+      padding: 15px;
+      color: #5E9C92;
+    }
+    .portfolio-item p {
+      padding: 0 15px 20px;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    /* CONTACT */
+    #contact {
+      text-align: center;
+    }
+    #contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      background: transparent;
+      color: #5E9C92;
+      border: 2px solid #5E9C92;
+      transition: all 0.3s;
+    }
+    #contact a:hover {
+      background: #5E9C92;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(94,156,146,0.5);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #A8D5C9;
+      color: #333;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Nama Kamu</h1>
+    <p>Mahasiswa Film | Filmmaker | Kreator</p>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#portfolio">Portofolio</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>
+      Halo, saya <strong>Nama Kamu</strong>. Saya seorang mahasiswa film yang fokus pada
+      sinematografi dan pencahayaan artistik. Website ini berisi karya film pendek, dokumentasi,
+      serta proyek visual yang pernah saya buat.
+    </p>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <h2>Portofolio</h2>
+    <div class="portfolio">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x250" alt="Proyek 1">
+        <h3>Judul Proyek 1</h3>
+        <p>Deskripsi singkat tentang proyek ini, proses kreatif, dan hasil akhirnya.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x250" alt="Proyek 2">
+        <h3>Judul Proyek 2</h3>
+        <p>Deskripsi singkat tentang proyek ini, proses kreatif, dan hasil akhirnya.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x250" alt="Proyek 3">
+        <h3>Judul Proyek 3</h3>
+        <p>Deskripsi singkat tentang proyek ini, proses kreatif, dan hasil akhirnya.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Kontak</h2>
+    <a href="mailto:emailkamu@gmail.com">Email Saya</a>
+    <a href="https://instagram.com/username" target="_blank">Instagram</a>
+    <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Nama Kamu. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>
